@@ -7,3 +7,15 @@
 # [1, 2, 3, 2, 5, 10]
 # Вывод:
 # значение:2 индексы 1 и 3
+N=int(input())
+a=0
+from random import randint
+mas=[randint(0,100) for i in range(N)]
+m=mas
+for i in range(len(mas)):
+    for j in range(len(m)):
+        if mas[i]==m[j] and i!=j:
+            print(mas[i], m[j],i,j)
+            a+=1
+if a==0:
+    print("No")
