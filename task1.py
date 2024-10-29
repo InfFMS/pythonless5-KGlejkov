@@ -10,13 +10,13 @@ N=int(input())
 from random import randint
 mas=[randint(0,1000) for i in range(N)]
 print(len(mas))
-a=0
+b=0
 for i in range(len(mas)):
     if mas[i]//100!=0 and mas[i]%10==mas[i]//100 and (mas[i]%100)//10==mas[i]//100:
-        a+=1
-if a==1:
-    print("YES")
+        b +=1
+if b==1:
+    print('YES')
 else:
-    print("NO")
+    print('NO')
 print(mas[-1])
 print(mas[1:N-1:1])
