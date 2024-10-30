@@ -8,16 +8,18 @@ N=int(input())
 M=[]
 from random import randint
 mas=[randint(10,100000) for i in range(N)]
-for i in mas:
-    if i>10 and i<100 and i%10==i//10:
-        M.append(i)
-    elif i>100 and i<1000 and i%10==(i//10)%10==i//100:
-        M.append(i)
-    elif i>1000 and i<10000 and i%10==(i//10)%10==(i//100)%10==i//1000:
-        M.append(i)
-    elif i>10000 and i<100000 and i%10==(i//10)%10==(i//100)%10==(i//1000)%10==i//10000:
-        M.append(i)
-print(M)
+print(mas)
+def f(mas):
+    for i in mas:
+        if i>10 and i<100 and i%10==i//10:
+            M.append(i)
+        elif i>100 and i<1000 and i%10==(i//10)%10==i//100:
+            M.append(i)
+        elif i>1000 and i<10000 and i%10==(i//10)%10==(i//100)%10==i//1000:
+            M.append(i)
+        elif i>10000 and i<100000 and i%10==(i//10)%10==(i//100)%10==(i//1000)%10==i//10000:
+            M.append(i)
+print(f(mas))
 
         
         

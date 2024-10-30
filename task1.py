@@ -15,8 +15,8 @@ for i in range(len(mas)):
     if mas[i]//100!=0 and mas[i]%10==mas[i]//100 and (mas[i]%100)//10==mas[i]//100:
         b +=1
 if b==1:
-    print('YES')
+    print("YES")
 else:
-    print('NO')
+    print("NO")
 print(mas[-1])
 print(mas[1:N-1:1])
